@@ -13,6 +13,11 @@
            revision="refs/heads/nougat"
            fetch=".."
            review="gerrit.aokp.co" />
+  
+  <remote  name="AOKP-CLARK"
+           revision="refs/heads/nougat"
+           fetch=".."
+           review="gerrit.aokp.co" />
 
   <remote  name="cm"
            fetch=".."
@@ -24,6 +29,11 @@
 
   <default revision="refs/heads/nougat"
            remote="aokp"
+           sync-c="true"
+           sync-j="4" />
+  
+  <default revision="refs/heads/nougat"
+           remote="AOKP-CLARK"
            sync-c="true"
            sync-j="4" />
 
