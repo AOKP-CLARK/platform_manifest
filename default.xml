@@ -13,11 +13,6 @@
            revision="refs/heads/nougat"
            fetch=".."
            review="gerrit.aokp.co" />
-  
-  <remote  name="AOKP-CLARK"
-           revision="refs/heads/nougat"
-           fetch=".."
-           review="gerrit.aokp.co" />
 
   <remote  name="cm"
            fetch=".."
@@ -32,10 +27,7 @@
            sync-c="true"
            sync-j="4" />
   
-  <default revision="refs/heads/nougat"
-           remote="AOKP-CLARK"
-           sync-c="true"
-           sync-j="4" />
+
 
   <!-- AOKP projects -->
   <project path="platform_manifest" name="AOKP/platform_manifest" remote="aokp" />
@@ -50,7 +42,7 @@
   <project path="packages/apps/Settings" name="AOKP/packages_apps_Settings" remote="aokp" groups="pdk-fs" />
   <project path="packages/apps/SetupWizard" name="AOKP/packages_apps_SetupWizard" remote="aokp" />
   <project path="system/core" name="AOKP/system_core" groups="pdk" remote="aokp" />
-  <project path="vendor/aokp" name="AOKP/vendor_aokp" remote="AOKP-CLARK" />
+  <project path="vendor/aokp" name="AOKP/vendor_aokp" remote="aokp" />
   <project path="vendor/cmsdk" name="AOKP/cm_platform_sdk" remote="aokp" />
   <!-- end AOKP projects -->
 
